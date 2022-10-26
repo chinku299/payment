@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-----links--->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Payment site</title>
+	<link rel="stylesheet" type="text/css" href="pay.css">
+	<!-----header--->
+	<header>
+		<h1 style="font-family: cursive; text-align: center;"><u>Please enter your M-pesa details <b>Correctly</b></u></h1>
+	</header>
+</head>
+<body>
+	<!-----form--->
+	<div style="float: center;" class="form">
+		<div style="float: left;">
+			<label style="font-family: cursive; margin: 10px;">Please enter your name.</label>
+			<form  method="post" action="?php echo $_SERVER['PHP_SELF'];?">
+				<input type="text" name="name" placeholder="Please enter your name" id="Name">
+			</form>
+			<br>
+			<label style="font-family: cursive;">Please enter number.</label>
+			<form method="post" action="?php echo $_SERVER['PHP_SELF'];?">
+				<input type="number" name="Phone-number" id="phonenumber" placeholder="Enter mobile number">
+			</form>
+		</div>
+		<div style="float: right;">
+			<label style="font-family: cursive;">Enter email.</label>
+			<form method="post" action="?php echo $_SERVER['PHP_SELF'];?">
+				<input type="email" name="Email" id="Email" placeholder="Enter your email">
+			</form>
+			<br>
+			<label style="font-family: cursive;">Enter amount.</label>
+			<form method="post" action="?php echo $_SERVER['PHP_SELF'];?">
+				<input type="number" name="amount" id="amount" placeholder="Enter amount">
+			</form>
+		</div>
+		<div style="margin: auto; width: 50%;">
+			<button style="color: blue; margin: 20px;">Pay
+			</button>
+		</div>
+	</div>
+	
+</body>
+</html>
+

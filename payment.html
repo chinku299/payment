@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-----links---->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Happy market place</title>
+	<link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+<!-----body--->
+<body style="background-color: whitesmoke;">
+	<!----nav links--->
+	<h1 style="font-family: cursive; color: red;"><u>Happy market place</u></h1>
+	<nav style="float: right; font-family: cursive;">
+		<a href="welcome.html">Welcome</a>
+		<a href="aboutus.html">About us</a>
+		<a href="contactme.html">Contacts</a>
+	</nav>
+	<br>
+	<hr>
+	<!----header--->
+	<header>
+		<h2 style="font-family: cursive;"><u>Welcome for the best cakes available</u></h1>
+	</header>
+	<!-----body section---->
+	<div class="body">
+		<p1>Welcome to the best cake market place available for all your needs.<br>The company core value is customer satisfaction, which we pride ourself in.</p1>
+	</div>
+	<div class="image" style="float: right;">
+		<img src="images.jpg" width="200px" >
+		<br>
+		<p2 style="font-family: cursive;">Make a request</p2>
+		<br>
+		<a href="pay.html">
+			<button style="font-family: cursive;" onclick="changeText(order)">Order
+				<script>
+					function changeText(id) { 
+    					getElementById('demo').innerHTML = "Welcome";
+						}
+				</script>
+			</button>
+		</a>		
+	</div>
+</body>
+<br>
+<br>
+<!-----footer---->
+<footer>
+	<!----feedback request--->
+	<form>
+		<p style="font-family: cursive;">Thankyou for visiting my <b>shop</b><br>Would you like to leave a feedback?</p>
+	<div class="feedback">
+		<div class="form">
+			<br>
+			<br>
+			<br>
+			<br>
+			<hr>
+			<form 
+			action="mailto:ndungusimon806@gmail.com" 
+			method=”POST”
+			enctype=”text/plain”
+			name=”EmailForm”
+			>
+		<label style="font-family: cursive;">Please enter your name</label>
+		<br>
+		<input type="text" name="Please enter your name">
+		<br>
+		<label style="font-family: cursive;">Please enter your feedback</label>
+		<br>
+		<input type="text" name="please enter your feedback">
+		<br>
+		<br>
+		<button>submitt</button>
+	</form>
+</footer>
+</html>
